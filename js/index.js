@@ -132,11 +132,13 @@ const sectionContent = document.querySelector(".contact");
 sectionContent.querySelector("h4").textContent =
   siteContent.contact["contact-h4"];
 
-sectionContent.querySelector("p:nth-child(2)").textContent =
+sectionContent.querySelector("p:nth-of-type(1)").textContent =
   siteContent.contact.address;
 
-sectionContent.querySelector("p:nth-child(3)").textContent =
+sectionContent.querySelector("p:nth-of-type(2)").textContent =
   siteContent.contact.phone;
 
-sectionContent.querySelector("p:nth-child(4)").textContent =
+sectionContent.querySelector("p:nth-of-type(3)").textContent =
   siteContent.contact.email;
+
+document.querySelector("footer p").textContent = siteContent.footer.copyright;
