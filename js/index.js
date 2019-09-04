@@ -149,18 +149,18 @@ navLinks.forEach(navLink => {
   navLink.style.color = "green";
 });
 
+const nav = document.querySelector("nav");
+
 const freebiesLink = document.createElement("a");
 
 freebiesLink.setAttribute("href", "#");
 freebiesLink.textContent = "Freebies";
-freebiesLink.style.paddingLeft = "40px";
 
-navLinks[3].append(freebiesLink);
+nav.append(freebiesLink);
 
 const teamLink = document.createElement("a");
 
 teamLink.setAttribute("href", "#");
 teamLink.textContent = "Team";
-teamLink.style.paddingRight = "40px";
 
-navLinks[5].prepend(teamLink);
+nav.prepend(teamLink);
