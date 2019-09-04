@@ -141,4 +141,26 @@ sectionContent.querySelector("p:nth-of-type(2)").textContent =
 sectionContent.querySelector("p:nth-of-type(3)").textContent =
   siteContent.contact.email;
 
-document.querySelector("footer p").textContent = siteContent.footer.copyright;
+const footerParagraph = document.querySelector("footer p");
+
+footerParagraph.textContent = siteContent.footer.copyright;
+
+navLinks.forEach(navLink => {
+  navLink.style.color = "green";
+});
+
+const freebiesLink = document.createElement("a");
+
+freebiesLink.setAttribute("href", "#");
+freebiesLink.textContent = "Freebies";
+freebiesLink.style.paddingLeft = "40px";
+
+navLinks[3].append(freebiesLink);
+
+const teamLink = document.createElement("a");
+
+teamLink.setAttribute("href", "#");
+teamLink.textContent = "Team";
+teamLink.style.paddingRight = "40px";
+
+navLinks[5].prepend(teamLink);
