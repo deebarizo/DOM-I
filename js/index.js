@@ -89,4 +89,54 @@ aboutDivParagraph.textContent = siteContent["main-content"]["about-content"];
 
 const middleImage = document.getElementById("middle-img");
 
-middleImage.setAttribute("src", siteContent.cta["middle-img-src"]);
+middleImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const bottomContentDivs = document.querySelectorAll(
+  ".bottom-content .text-content"
+);
+
+const servicesDiv = bottomContentDivs[0];
+
+const servicesDivh4 = servicesDiv.querySelector("h4");
+
+servicesDivh4.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesDivParagraph = servicesDiv.querySelector("p");
+
+servicesDivParagraph.textContent =
+  siteContent["main-content"]["services-content"];
+
+const productDiv = bottomContentDivs[1];
+
+const productDivh4 = productDiv.querySelector("h4");
+
+productDivh4.textContent = siteContent["main-content"]["product-h4"];
+
+const productDivParagraph = productDiv.querySelector("p");
+
+productDivParagraph.textContent =
+  siteContent["main-content"]["product-content"];
+
+const visionDiv = bottomContentDivs[2];
+
+const visionDivh4 = visionDiv.querySelector("h4");
+
+visionDivh4.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionDivParagraph = visionDiv.querySelector("p");
+
+visionDivParagraph.textContent = siteContent["main-content"]["vision-content"];
+
+const sectionContent = document.querySelector(".contact");
+
+sectionContent.querySelector("h4").textContent =
+  siteContent.contact["contact-h4"];
+
+sectionContent.querySelector("p:nth-child(2)").textContent =
+  siteContent.contact.address;
+
+sectionContent.querySelector("p:nth-child(3)").textContent =
+  siteContent.contact.phone;
+
+sectionContent.querySelector("p:nth-child(4)").textContent =
+  siteContent.contact.email;
